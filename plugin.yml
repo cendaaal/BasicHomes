@@ -1,0 +1,6 @@
+name: 'BasicHomes'
+description: 'Basic home plugin for PocketMine-MP'
+author: 'cendaaal'
+api: '5.0.0'
+main: 'cendaaal\homes\HomePlugin'
+version: 'dev-1.0'
