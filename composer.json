@@ -1,0 +1,24 @@
+{
+  "name": "cendaaal/basic-homes",
+  "version": "dev-1.0",
+  "description": "Basic home plugin for PocketMine-MP",
+  "minimum-stability": "stable",
+  "license": "Apache-2.0",
+  "require": {
+    "php": "^8.2"
+  },
+  "require-dev": {
+    "pocketmine/pocketmine-mp": "5.17.0",
+    "phpstan/phpstan": "1.11.7",
+    "phpstan/phpstan-strict-rules": "1.6.0"
+  },
+  "autoload": {
+    "psr-4": {"": ["src"]}
+  },
+  "scripts": {
+    "make-server": [
+      "@composer install --no-dev --classmap-authoritative --ignore-platform-reqs",
+      "@php -dphar.readonly=0 make-phar.php"
+    ]
+  }
+}
